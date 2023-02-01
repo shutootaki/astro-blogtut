@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-
+import Navigation from "../components/Navigation.astro";
 const pageTitle = "私について";
 
 const identity = {
@@ -16,10 +16,6 @@ const finished = false;
 const goal = 3;
 const skillsColor = "navy";
 ---
-
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/blog">Blog</a>
 
 <html>
   <head>
@@ -41,6 +37,8 @@ const skillsColor = "navy";
     <title>{pageTitle}</title>
   </head>
   <body>
+    <Navigation />
+
     <h1>Astro Blog</h1>
     <h1>{pageTitle}</h1>
     <h2>Hello Astro World</h2>
