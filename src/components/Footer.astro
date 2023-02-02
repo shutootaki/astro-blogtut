@@ -1,8 +1,5 @@
 ---
 import Social from "./Social.astro";
-
-const platform = "github";
-const username = "withastro";
 ---
 
 <style>
@@ -12,12 +9,8 @@ const username = "withastro";
     gap: 1rem;
   }
 </style>
+
 <footer>
-  <p>
-    Learn more about my projects on <a
-      href={`https://www.${platform}.com/${username}`}>{platform}</a
-    >!
-  </p>
   <Social platform="twitter" username="_takigon" />
   <Social platform="github" username="shutootaki" />
 </footer>
