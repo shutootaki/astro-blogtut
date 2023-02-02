@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 const pageTitle = "私について";
@@ -43,7 +42,6 @@ const skillsColor = "navy";
     <h1>Astro Blog</h1>
     <h1>{pageTitle}</h1>
     <h2>Hello Astro World</h2>
-    <h2>自己紹介</h2>
     <ul>
       <li>My name is{identity.name}</li>
       <li>I live in {identity.country} and I work as a {identity.job}</li>
@@ -71,5 +69,8 @@ const skillsColor = "navy";
       )
     }
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
