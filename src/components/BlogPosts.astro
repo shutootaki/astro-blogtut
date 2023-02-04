@@ -1,7 +1,7 @@
 ---
-const { url, posts } = Astro.props;
+const { url, title } = Astro.props;
 ---
 
 <li>
-  <a href={url}>{posts.frontmatter.title}</a>
+  <a href={url}>{title}</a>
 </li>
