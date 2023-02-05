@@ -1,13 +1,14 @@
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
+  height: 100%;
 }
 
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
+  height: 100%;
+  padding: 2rem;
   line-height: 1.5;
 }
 
@@ -80,4 +81,13 @@ a:focus {
   .hamburger {
     display: none;
   }
+}
+
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
